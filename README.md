@@ -102,3 +102,7 @@ networks:
 ### Run demo :
 
 `docker-compose up -d --build`
+
+## Step 5
+
+Check console logs for Axon event processors in axo-stream-source,sink and process microservices.
