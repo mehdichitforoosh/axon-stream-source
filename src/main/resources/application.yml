@@ -1,0 +1,19 @@
+server:
+  port: 9000
+spring:
+  rabbitmq:
+    addresses: rabbitmq:5672
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: events-exchange
+          content-type: application/json
+logging:
+  level:
+    org:
+      springframework: DEBUG
