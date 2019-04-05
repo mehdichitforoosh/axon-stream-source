@@ -1,4 +1,21 @@
-# axon-stream-source
+# Integrate Spring Cloud Stream with AxonIQ Framework.
+
+
+## Step 1
+
+[Install Docker compose](https://docs.docker.com/compose/install/)
+
+## Step 2
+
+>`$ mkdir test-axon-spring-cloud-stream` \
+>`$ cd test-axon-spring-cloud-stream` \
+>`$ git clone https://github.com/mehdichitforoosh/axon-stream-source.git` \
+>`$ git clone https://github.com/mehdichitforoosh/axon-stream-sink.git` \
+>`$ git clone https://github.com/mehdichitforoosh/axon-stream-processor.git`
+
+## Step 3
+
+create a **docker-compose.yml** file in **test-axon-spring-cloud-stream** directory.
 
 ### docker-compose.yml :
 
@@ -79,7 +96,8 @@ networks:
     name: services-network-01
     driver: bridge
 ```
-    
-# Run demo :
+## Step 4
+
+### Run demo :
 
 `docker-compose up -d --build`
