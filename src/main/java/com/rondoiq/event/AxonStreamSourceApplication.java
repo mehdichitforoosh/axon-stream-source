@@ -14,7 +14,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.messaging.Processor;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.dsl.IntegrationFlow;
@@ -23,7 +22,7 @@ import org.springframework.integration.dsl.IntegrationFlows;
 import java.util.UUID;
 
 @SpringBootApplication
-@EnableBinding(Processor.class)
+@EnableBinding(Source.class)
 public class AxonStreamSourceApplication {
 
     public static void main(String[] args) {
