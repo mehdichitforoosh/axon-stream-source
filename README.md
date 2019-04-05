@@ -19,7 +19,8 @@ create a **docker-compose.yml** file in **test-axon-spring-cloud-stream** direct
 
 ### docker-compose.yml :
 
-```version: '3.5'
+```
+version: '3.5'
 services:
 
   rabbitmq:
