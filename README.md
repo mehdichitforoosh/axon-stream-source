@@ -105,4 +105,12 @@ networks:
 
 ## Step 5
 
-Check console logs for Axon event processors in axo-stream-source,sink and process microservices.
+Check console logs for Axon event processors in axon-stream-source,sink and processor microservices.
+
+If you had a problem with downloading maven dependencies in docker container:
+
+>`$ docker-compose down -v`
+
+then:
+
+>`$ docker-compose up -d`
