@@ -41,7 +41,7 @@ services:
     environment:
       - SPRING_APPLICATION_NAME=axon-stream-source
       - SPRING_PROFILES_ACTIVE=dev
-    command: ["dockerize","-wait","tcp://rabbitmq:5672","-timeout=2m", "mvn", "spring-boot:run"]
+    command: ["mvn", "spring-boot:run"]
     expose:
       - "9000"
     volumes:
@@ -59,7 +59,7 @@ services:
     environment:
       - SPRING_APPLICATION_NAME=axon-stream-sink
       - SPRING_PROFILES_ACTIVE=dev
-    command: ["dockerize","-wait","tcp://rabbitmq:5672","-timeout=2m", "mvn", "spring-boot:run"]
+    command: ["mvn", "spring-boot:run"]
     expose:
       - "9000"
     volumes:
@@ -77,7 +77,7 @@ services:
     environment:
       - SPRING_APPLICATION_NAME=axon-stream-process
       - SPRING_PROFILES_ACTIVE=dev
-    command: ["dockerize","-wait","tcp://rabbitmq:5672","-timeout=2m", "mvn", "spring-boot:run"]
+    command: ["mvn", "spring-boot:run"]
     expose:
       - "9000"
     volumes:
