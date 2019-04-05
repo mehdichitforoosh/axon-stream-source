@@ -1,4 +1,4 @@
-# Integrate Spring Cloud Stream with AxonIQ Framework.
+# Integrate Spring Cloud Stream and Spring Integration with AxonIQ Framework.
 
 
 ## Step 1
